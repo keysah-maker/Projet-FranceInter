@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta id="audio1" class="{{ audio1 }}">
+        <meta id="audio2" class="{{ audio2 }}">
+        <link rel="stylesheet" href="{{ url_for("static", filename = "css/style.css") }}">
+        <title>Sound</title>
+    </head>
+
+    <header>
+        <img class="logo" src="{{ url_for("static", filename = "img/france-inter-logo.jpg") }}">
+    </header>
+    <body>
+        <script type="text/javascript" src="{{ url_for("static", filename = "js/audio.js") }}"></script>
+
+        <button onclick='play_audio("{{ url_for("static", filename = audio1) }}")'></button>
+
+    </body>
+</html>

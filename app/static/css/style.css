@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: beige; 
+}
+
+h1 {
+     text-align: center;
+     font-weight: 300;
+}
+
+form {
+     margin-left: 650px;
+}
+
+img {
+     max-width: 100%;
+     height: 50px;
+}
+
+.logo {
+    height: 50px;
+    width: 80px;
+}

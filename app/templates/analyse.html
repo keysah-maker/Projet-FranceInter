@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TIC_CLO2</title>
+        <<link rel="stylesheet" href="{{ url_for("static", filename = "css/style.css") }}">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="{{ url_for("static", filename = "img/france-inter-logo.jpg") }}">
+            <h1>Social Distancing</h1>
+        </header>
+        <br><br>
+
+        <form action="{{ url_for('compute_image') }}" method="post" enctype="multipart/form-data">
+
+            <label> Image:<br>
+            <input type="file" name="image" accept="image/png,image/jpeg,image/gif,image/bmp">
+            </label><br>
+
+            <label> Config:<br>
+                <input type="file" name="config" accept="application/JSON">
+            </label><br>
+
+            <label> fichier audio fr:<br>
+                <input type="file" name="audio-fr" accept="audio/wav">
+            </label><br>
+
+            <label> fichier audio en:<br>
+                <input type="file" name="audio-en" accept="audio/wav">
+            </label><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

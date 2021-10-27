@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Download</title>
+        <link rel="stylesheet" href="{{ url_for("static", filename = "css/style.css") }}">
+    </head>
+
+    <header>
+        <img class="logo" src="{{ url_for("static", filename = "img/france-inter-logo.jpg") }}">
+    </header>
+    <body>
+        <a href="/send_audio/1">
+            <button>Download audio-fr</button>
+        </a>
+        <a href="/send_audio/2">
+            <button>Download audio-en</button>
+        </a>
+    </body>
+</html>
